@@ -212,9 +212,9 @@ class Model:
         :return: new instance of the RNN or an exception if it was not possible to load it.
         """
         if torch.cuda.is_available():
-            save_dict = torch.load(file_path, map_location=device)
+            save_dict = torch.load(file_path, map_location=device, weights_only=False)
         else:
-            save_dict = torch.load(file_path, map_location=lambda storage, loc: storage)
+            save_dict = torch.load(file_path, map_location=lambda storage, loc: storage, weights_only=False)
 
         network_params = save_dict.get("network_params", {})
         model = Model(
