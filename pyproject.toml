@@ -11,7 +11,7 @@ authors = [
 description = "A scoring, benchmarking and evaluation framework for goal directed generative models"
 keywords = ["SMILES", "Chemical language models", "De novo", "Constrained de novo", "chemistry", "drug design", "reinforcement learning"]
 readme = "README.md"
-requires-python = ">=3.6, <3.12"
+requires-python = ">=3.6, <3.13"
 classifiers = [
   # Development status
   "Development Status :: 4 - Beta", 
